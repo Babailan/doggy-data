@@ -8,7 +8,5 @@
   "env": {
     "MONGODB_URI": "mongodb+srv://read_dog:eThS2MFOqiwAQuln@cluster0.dgb4wek.mongodb.net/?retryWrites=true&w=majority",
     "NODE_ENV": "production"
-  },
-  "devCommand": null,
-  "buildCommand": null
+  }
 }
