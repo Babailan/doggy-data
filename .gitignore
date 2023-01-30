@@ -3,3 +3,4 @@ node_modules
 .docusaurus
 build
 public
+package-lock.json
