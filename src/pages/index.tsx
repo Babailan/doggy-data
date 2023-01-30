@@ -1,19 +1,18 @@
 import React from "react";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
-import IntroPage from "../components/IntroPage";
+import HomepageFeatures from "@site/src/components/HomePage/HomepageFeatures";
+import IntroPage from "../components/HomePage/IntroPage";
+import OpenSource from "../components/HomePage/OpenSource";
 
-export default function Home(): JSX.Element {
+export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
-    >
+    <Layout>
       <main>
-        <IntroPage/>
+        <IntroPage />
         <HomepageFeatures />
+        <OpenSource />
       </main>
     </Layout>
   );

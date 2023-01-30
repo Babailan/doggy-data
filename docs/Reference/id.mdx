@@ -1,0 +1,935 @@
+---
+sidebar_label: "API Endpoint: Using ID"
+sidebar_position: 1
+---
+
+import style from "./style.module.css";
+
+# API Endpoint: Using ID
+
+The Dog Breed API provides information about specific dog breeds by using a unique ID. This allows you to retrieve information about a specific breed, including its name, origin and characteristics.
+
+## Endpoint
+
+`GET /api/breeds/id?q=[id]`
+
+## Parameters
+
+- `q`: The unique ID of the breed you want to retrieve information about.
+
+## Example Request
+
+<a
+  href="/api/breeds/63c7b1c61e9584717deef24"
+  className={style.link}
+  target="_blank"
+>
+  GET /api/breeds/63c7b1c61e9584717deef24f
+</a>
+
+## Example Response
+
+I recently obtained this data through web scraping, and while it may not be easily modifiable,
+it contains a wealth of information about various dog breeds. Unfortunately, due to the time-consuming
+nature of using aggregation pipes with MongoDB, I am unable to provide a more refined version of the data.
+I apologize for any inconvenience this may cause, but I hope that the raw information can still prove useful to you.
+
+> _<small>its also worth noting that some of the data may contain HTML tags. If you want to extract the raw data, you can use a tool such as [Cheerio](https://github.com/cheeriojs/cheerio). However, you can also use your creativity and let the tags do their job to display the data in a more visually appealing manner.</small>_
+
+```ts
+{
+  "_id": { "$oid": "63c7b1b01e9584717deef1d5" },
+  "settings": {
+    "current_breed": "affenpinscher",
+    "current_breed_group": {
+      "name": "Toy Group",
+      "url": "https://www.akc.org/dog-breeds/toy/",
+      "tooltip": "<p>The AKC has grouped all of the breeds that it registers into seven categories, or groups, roughly based on function and heritage. Breeds are grouped together because they share traits of form and function or a common heritage.</p>\n"
+    },
+    "api_url": "https://sbdapi.akc.org/admin-api/",
+    "breed_data": {
+      "health": {
+        "affenpinscher": {
+          "breed_name_url": "affenpinscher",
+          "breed_name": "Affenpinscher",
+          "parent_club_health_statement_link": "http://cdn.akc.org/Marketplace/Health-Statement/Affenpinscher.pdf",
+          "mp_health": "<p>Affenpinschers can be subject to hip dysplasia or slipping of the knees in the hind legs (luxating patellae), both hereditary conditions. In some instances eye problems and heart defects have occurred in the breed. See your veterinarian at the first symptom of any irregularity in gait, vision or stamina.</p>",
+          "akc_org_health": "<p>Affenpinschers are generally healthy dogs, and responsible breeders will screen their stock for health conditions such as luxating patella, heart anomalies, vision problems, and hip dysplasia. Like other shorter-faced breeds, Affens can experience breathing problems during hot weather if they are permitted to overheat and then have difficulty panting in order to lower their body temperature, as dogs don't sweat to keep cool.</p>",
+          "akc_org_nutrition": "<p>The Affenpinscher should do well on a high-quality dog food, whether commercially manufactured or home-prepared with your veterinarian's supervision and approval. Any diet should be appropriate to the dog's age (puppy, adult, or senior). Some dogs are prone to getting overweight, so watch your dog's calorie consumption and weight level. Treats can be an important aid in training, but giving too many can cause obesity. Learn about which human foods are safe for dogs, and which are not. Check with your vet if you have any concerns about your dog's weight or diet. Clean, fresh water should be available at all times.</p>",
+          "akc_org_grooming": "<p>The Affenpinscher's medium-length, wiry coat should be groomed twice a week, first with a brush and then with a metal comb. Any mats should be pulled apart with the fingers. The hair on the head is usually brushed forward over the face, and then an inverted V-shape is cut to expose the eyes. Similarly, the hair on the bridge of the nose is trimmed into a fan shape to keep the eyes clear. The Affen's coat does not grow quickly, so a trimming a pet Affen every few months should suffice. The breed's national parent club, the Affenpinscher Club of America, provides a detailed grooming guide. Affens should also have their nails trimmed and their teeth brushed regularly.</p>",
+          "akc_org_exercise": "<p>One of the attractions of the toy breeds is that their small size makes them ideal apartment dogs. While Affenpinschers can be perfectly happy living in close quarters, the breed is classified as 'moderately active,' and as such, they do need exercise. Indoor play, both with his owner and just between himself and a toy, can be enough to make up a large chunk of an Affen's exercise regimen. Even so, a brisk walk once or twice a day is required. In addition to providing exercise, these walks give the Affen a chance to socialize both with people and other dogs.</p>",
+          "akc_org_training": "<p>Affenpinschers are courageous, bold, and often feisty. Basic obedience training is recommended. The breed has an undeserved reputation as being difficult to train because Affenpinschers are independent minded and can be stubborn. The key is that they are very intelligent and generally eager to please the humans they have bonded with. Keep in mind that they are easily bored and tend to lose interest during long training sessions. Shorter, more frequent sessions with a trainer who has experience working with toy breeds are usually quite successful.</p>",
+          "test_1": "Patella Evaluation",
+          "test_2": "Ophthalmologist Evaluation",
+          "test_3": "",
+          "test_4": "",
+          "test_5": "",
+          "test_6": "",
+          "test_7": "",
+          "test_8": "",
+          "test_9": "",
+          "tests_pipe_delimited_list": "Patella Evaluation | Ophthalmologist Evaluation"
+        }
+      },
+      "basics": {
+        "affenpinscher": {
+          "breed_name_url": "affenpinscher",
+          "breed_name": "Affenpinscher",
+          "breed_name_oracle": "Affenpinscher",
+          "matches_oracle": "Affenpinscher",
+          "akc_code": "501",
+          "breed_name_plural": "Affenpinschers",
+          "breed_nicknames": "Affen, Monkey Dog",
+          "origin": "Germany",
+          "breed_group": "Toy Group",
+          "year_recognized": "1936",
+          "life_expectancy": "12-15 years",
+          "related_breeds": "Brussels Griffon, West Highland White Terrier, Norwich Terrier, Miniature Schnauzer, Cairn Terrier",
+          "links": {
+            "mp_url": "https://marketplace.akc.org/puppies/affenpinscher",
+            "akc_url": "https://www.akc.org/dog-breeds/affenpinscher/"
+          },
+          "popularity_2021": { "$numberInt": "159" },
+          "popularity_2020": { "$numberInt": "163" },
+          "popularity_2019": { "$numberInt": "152" },
+          "popularity_2018": { "$numberInt": "148" },
+          "popularity_2017": { "$numberInt": "147" },
+          "popularity_2016": { "$numberInt": "149" },
+          "popularity_2015": { "$numberInt": "136" },
+          "related_groups_characteristics": "Smallest Dog Breeds, Hypoallergenic Dogs, Best Dogs for Apartment Dwellers",
+          "related_breeds_items_url": [
+            "brussels-griffon",
+            "west-highland-white-terrier",
+            "norwich-terrier",
+            "miniature-schnauzer",
+            "cairn-terrier"
+          ],
+          "related_breeds_items": {
+            "brussels-griffon": {
+              "breed_name_url": "brussels-griffon",
+              "breed_name": "Brussels Griffon",
+              "breed_name_oracle": "Brussels Griffon",
+              "matches_oracle": "Brussels Griffon",
+              "akc_code": "502",
+              "breed_name_plural": "Brussels Griffons",
+              "breed_nicknames": "Griffon Bruxellois, Griff",
+              "origin": "Belgium",
+              "breed_group": "Toy Group",
+              "year_recognized": "1910",
+              "life_expectancy": "12-15 years",
+              "related_breeds": "Affenpinscher, English Toy Spaniel, Pekingese, Chihuahua, Pug",
+              "links": [],
+              "popularity_2021": { "$numberInt": "97" },
+              "popularity_2020": { "$numberInt": "89" },
+              "popularity_2019": { "$numberInt": "98" },
+              "popularity_2018": { "$numberInt": "98" },
+              "popularity_2017": { "$numberInt": "94" },
+              "popularity_2016": { "$numberInt": "97" },
+              "popularity_2015": { "$numberInt": "95" },
+              "related_groups_characteristics": "Smallest Dog Breeds, Best Family Dogs",
+              "temperament": "alert / curious / loyal"
+            },
+            "west-highland-white-terrier": {
+              "breed_name_url": "west-highland-white-terrier",
+              "breed_name": "West Highland White Terrier",
+              "breed_name_oracle": "West Highland White Terrier",
+              "matches_oracle": "West Highland White Terrier",
+              "akc_code": "222",
+              "breed_name_plural": "West Highland White Terriers",
+              "breed_nicknames": "Westie",
+              "origin": "Scotland",
+              "breed_group": "Terrier Group",
+              "year_recognized": "1908",
+              "life_expectancy": "13-15 years",
+              "related_breeds": "Cairn Terrier, Norfolk Terrier, Norwich Terrier, Scottish Terrier, Australian Terrier",
+              "links": [],
+              "popularity_2021": { "$numberInt": "46" },
+              "popularity_2020": { "$numberInt": "44" },
+              "popularity_2019": { "$numberInt": "44" },
+              "popularity_2018": { "$numberInt": "42" },
+              "popularity_2017": { "$numberInt": "42" },
+              "popularity_2016": { "$numberInt": "41" },
+              "popularity_2015": { "$numberInt": "41" },
+              "related_groups_characteristics": "",
+              "temperament": "loyal / happy / entertaining"
+            },
+            "norwich-terrier": {
+              "breed_name_url": "norwich-terrier",
+              "breed_name": "Norwich Terrier",
+              "breed_name_oracle": "Norwich Terrier",
+              "matches_oracle": "Norwich Terrier",
+              "akc_code": "215",
+              "breed_name_plural": "Norwich Terriers",
+              "breed_nicknames": "Norwich",
+              "origin": "England",
+              "breed_group": "Terrier Group",
+              "year_recognized": "1936",
+              "life_expectancy": "12-15 years",
+              "related_breeds": "Border Terrier, Norfolk Terrier, Australian Terrier, West Highland White Terrier, Cairn Terrier",
+              "links": [],
+              "popularity_2021": { "$numberInt": "111" },
+              "popularity_2020": { "$numberInt": "109" },
+              "popularity_2019": { "$numberInt": "104" },
+              "popularity_2018": { "$numberInt": "108" },
+              "popularity_2017": { "$numberInt": "105" },
+              "popularity_2016": { "$numberInt": "103" },
+              "popularity_2015": { "$numberInt": "103" },
+              "related_groups_characteristics": "Smallest Dog Breeds",
+              "temperament": "alert / curious / loyal / affectionate / gregarious"
+            },
+            "miniature-schnauzer": {
+              "breed_name_url": "miniature-schnauzer",
+              "breed_name": "Miniature Schnauzer",
+              "breed_name_oracle": "Miniature Schnauzer",
+              "matches_oracle": "Miniature Schnauzer",
+              "akc_code": "214",
+              "breed_name_plural": "Miniature Schnauzers",
+              "breed_nicknames": "Mini",
+              "origin": "Germany",
+              "breed_group": "Terrier Group",
+              "year_recognized": "1926",
+              "life_expectancy": "12-15 years",
+              "related_breeds": "Standard Schnauzer, Kerry Blue Terrier, Giant Schnauzer, Brussels Griffon",
+              "links": [],
+              "popularity_2021": { "$numberInt": "18" },
+              "popularity_2020": { "$numberInt": "19" },
+              "popularity_2019": { "$numberInt": "18" },
+              "popularity_2018": { "$numberInt": "19" },
+              "popularity_2017": { "$numberInt": "18" },
+              "popularity_2016": { "$numberInt": "17" },
+              "popularity_2015": { "$numberInt": "16" },
+              "related_groups_characteristics": "Smallest Dog Breeds, Hypoallergenic Dogs, ",
+              "temperament": "friendly / smart / obedient"
+            },
+            "cairn-terrier": {
+              "breed_name_url": "cairn-terrier",
+              "breed_name": "Cairn Terrier",
+              "breed_name_oracle": "Cairn Terrier",
+              "matches_oracle": "Cairn Terrier",
+              "akc_code": "207",
+              "breed_name_plural": "Cairn Terriers",
+              "breed_nicknames": "Cairn",
+              "origin": "Scotland",
+              "breed_group": "Terrier Group",
+              "year_recognized": "1913",
+              "life_expectancy": "13-15 years",
+              "related_breeds": "Skye Terrier, West Highland White Terrier, Norwich Terrier, Border Terrier, Scottish Terrier",
+              "links": [],
+              "popularity_2021": { "$numberInt": "74" },
+              "popularity_2020": { "$numberInt": "73" },
+              "popularity_2019": { "$numberInt": "73" },
+              "popularity_2018": { "$numberInt": "69" },
+              "popularity_2017": { "$numberInt": "69" },
+              "popularity_2016": { "$numberInt": "70" },
+              "popularity_2015": { "$numberInt": "70" },
+              "related_groups_characteristics": "Smallest Dog Breeds, Best Dogs for Apartment Dwellers, ",
+              "temperament": "alert / cheerful / busy"
+            }
+          },
+          "total_breed_count": { "$numberInt": "284" }
+        }
+      },
+      "traits": {
+        "affenpinscher": {
+          "breed_name_url": "affenpinscher",
+          "breed_name": "Affenpinscher",
+          "temperament": "confident / famously funny / fearless",
+          "traits": {
+            "adaptability_level": {
+              "selected": [],
+              "choices": false,
+              "score": { "$numberInt": "4" },
+              "traits_url": "adaptability_level",
+              "traits": "Adaptability Level",
+              "description": "How easily a breed handles change. This can include changes in living conditions, noise, weather, daily schedule, and other variations in day-to-day life.",
+              "breed_group": "Social",
+              "type": "radio",
+              "low_value_1": "Lives For Routine",
+              "middle_value_3": "Moderate",
+              "high_value_5": "Highly Adaptable"
+            },
+            "affectionate_with_family": {
+              "selected": [],
+              "choices": false,
+              "score": { "$numberInt": "3" },
+              "traits_url": "affectionate_with_family",
+              "traits": "Affectionate With Family",
+              "description": "How affectionate a breed is likely to be with family members, or other people he knows well. Some breeds can be aloof with everyone but their owner, while other breeds treat everyone they know like their best friend.",
+              "breed_group": "Family Life",
+              "type": "radio",
+              "low_value_1": "Independent",
+              "middle_value_3": "Friendly",
+              "high_value_5": "Lovey-Dovey"
+            },
+            "barking_level": {
+              "selected": [],
+              "choices": false,
+              "score": { "$numberInt": "3" },
+              "traits_url": "barking_level",
+              "traits": "Barking Level",
+              "description": "How often this breed vocalizes, whether it's with barks or howls. While some breeds will bark at every passer-by or bird in the window, others will only bark in particular situations. Some barkless breeds can still be vocal, using other sounds to express themselves.",
+              "breed_group": "Character",
+              "type": "radio",
+              "low_value_1": "Only To Alert",
+              "middle_value_3": "Occasional",
+              "high_value_5": "Very Vocal"
+            },
+            "coat_grooming_frequency": {
+              "selected": [],
+              "choices": false,
+              "score": { "$numberInt": "3" },
+              "traits_url": "coat_grooming_frequency",
+              "traits": "Coat Grooming Frequency",
+              "description": "How frequently a breed requires bathing, brushing, trimming, or other kinds of coat maintenance. Consider how much time, patience, and budget you have for this type of care when looking at the grooming effort needed. All breeds require regular nail trimming.",
+              "breed_group": "Physical",
+              "type": "radio",
+              "low_value_1": "Monthly",
+              "middle_value_3": "Weekly",
+              "high_value_5": "Daily"
+            },
+            "good_with_young_children": {
+              "selected": [],
+              "choices": false,
+              "score": { "$numberInt": "3" },
+              "traits_url": "good_with_young_children",
+              "traits": "Good With Young Children",
+              "description": "A breed's level of tolerance and patience with childrens' behavior, and overall family-friendly nature. Dogs should always be supervised around young children, or children of any age who have little exposure to dogs.",
+              "breed_group": "Family Life",
+              "type": "radio",
+              "low_value_1": "Not Recommended",
+              "middle_value_3": "With Supervision",
+              "high_value_5": "Good With Children"
+            },
+            "coat_length": {
+              "selected": ["Short", "Medium"],
+              "choices": ["Short", "Medium", "Long"],
+              "score": { "$numberInt": "0" },
+              "traits_url": "coat_length",
+              "traits": "Coat Length",
+              "description": "How long the breed's coat is expected to be. Some long-haired breeds can be trimmed short, but this will require additional upkeep to maintain.",
+              "breed_group": "Physical",
+              "type": "checkbox",
+              "low_value_1": "Checkbox (can have multiple values)",
+              "middle_value_3": "",
+              "high_value_5": ""
+            },
+            "coat_type": {
+              "selected": ["Wiry"],
+              "choices": [
+                "Wiry",
+                "Hairless",
+                "Smooth",
+                "Rough",
+                "Corded",
+                "Double",
+                "Curly",
+                "Wavy",
+                "Silky"
+              ],
+              "score": { "$numberInt": "0" },
+              "traits_url": "coat_type",
+              "traits": "Coat Type",
+              "description": "Canine coats come in many different types, depending on the breed's purpose. Each coat type comes with different grooming needs, allergen potential, and shedding level. You may also just prefer the look or feel of certain coat types over others when choosing a family pet.",
+              "breed_group": "Physical",
+              "type": "checkbox",
+              "low_value_1": "Checkbox (can have multiple values)",
+              "middle_value_3": "",
+              "high_value_5": ""
+            },
+            "drooling_level": {
+              "selected": [],
+              "choices": false,
+              "score": { "$numberInt": "1" },
+              "traits_url": "drooling_level",
+              "traits": "Drooling Level",
+              "description": "How drool-prone a breed tends to be. If you're a neat freak, dogs that can leave ropes of slobber on your arm or big wet spots on your clothes may not be the right choice for you.",
+              "breed_group": "Physical",
+              "type": "radio",
+              "low_value_1": "Less Likely to Drool",
+              "middle_value_3": "Average",
+              "high_value_5": "Always Have a Towel"
+            },
+            "energy_level": {
+              "selected": [],
+              "choices": false,
+              "score": { "$numberInt": "3" },
+              "traits_url": "energy_level",
+              "traits": "Energy Level",
+              "description": "The amount of exercise and mental stimulation a breed needs. High energy breeds are ready to go and eager for their next adventure. They'll spend their time running, jumping, and playing throughout the day. Low energy breeds are like couch potatoes - they're happy to simply lay around and snooze.",
+              "breed_group": "Character",
+              "type": "radio",
+              "low_value_1": "Couch Potato",
+              "middle_value_3": "Moderate",
+              "high_value_5": "High Energy"
+            },
+            "good_with_other_dogs": {
+              "selected": [],
+              "choices": false,
+              "score": { "$numberInt": "3" },
+              "traits_url": "good_with_other_dogs",
+              "traits": "Good With Other Dogs",
+              "description": "How generally friendly a breed is towards other dogs. Dogs should always be supervised for interactions and introductions with other dogs, but some breeds are innately more likely to get along with other dogs, both at home and in public.",
+              "breed_group": "Social",
+              "type": "radio",
+              "low_value_1": "Not Recommended",
+              "middle_value_3": "With Supervision",
+              "high_value_5": "Good With Other Dogs"
+            },
+            "mental_stimulation_needs": {
+              "selected": [],
+              "choices": false,
+              "score": { "$numberInt": "3" },
+              "traits_url": "mental_stimulation_needs",
+              "traits": "Mental Stimulation Needs",
+              "description": "How much mental stimulation a breed needs to stay happy and healthy. Purpose-bred dogs can have jobs that require decision-making, problem-solving, concentration, or other qualities, and without the brain exercise they need, they'll create their own projects to keep their minds busy -- and they probably won't be the kind of projects you'd like.",
+              "breed_group": "Character",
+              "type": "radio",
+              "low_value_1": "Happy to Lounge",
+              "middle_value_3": "Moderate",
+              "high_value_5": "Needs a Job or Activity"
+            },
+            "openness_to_strangers": {
+              "selected": [],
+              "choices": false,
+              "score": { "$numberInt": "5" },
+              "traits_url": "openness_to_strangers",
+              "traits": "Openness To Strangers",
+              "description": "How welcoming a breed is likely to be towards strangers. Some breeds will be reserved or cautious around all strangers, regardless of the location, while other breeds will be happy to meet a new human whenever one is around!",
+              "breed_group": "Social",
+              "type": "radio",
+              "low_value_1": "Reserved",
+              "middle_value_3": "Ambivalent",
+              "high_value_5": "Everyone Is My Best Friend"
+            },
+            "playfulness_level": {
+              "selected": [],
+              "choices": false,
+              "score": { "$numberInt": "3" },
+              "traits_url": "playfulness_level",
+              "traits": "Playfulness Level",
+              "description": "How enthusiastic about play a breed is likely to be, even past the age of puppyhood. Some breeds will continue wanting to play tug-of-war or fetch well into their adult years, while others will be happy to just relax on the couch with you most of the time.",
+              "breed_group": "Social",
+              "type": "radio",
+              "low_value_1": "Only When You Want To Play",
+              "middle_value_3": "Moderate",
+              "high_value_5": "Non-Stop"
+            },
+            "shedding_level": {
+              "selected": [],
+              "choices": false,
+              "score": { "$numberInt": "3" },
+              "traits_url": "shedding_level",
+              "traits": "Shedding Level",
+              "description": "How much fur and hair you can expect the breed to leave behind. Breeds with high shedding will need to be brushed more frequently, are more likely to trigger certain types of allergies, and are more likely to require more consistent vacuuming and lint-rolling.",
+              "breed_group": "Physical",
+              "type": "radio",
+              "low_value_1": "No Shedding",
+              "middle_value_3": "Moderate",
+              "high_value_5": "Hair Everywhere"
+            },
+            "trainability_level": {
+              "selected": [],
+              "choices": false,
+              "score": { "$numberInt": "3" },
+              "traits_url": "trainability_level",
+              "traits": "Trainability Level",
+              "description": "How easy it will be to train your dog, and how willing your dog will be to learn new things. Some breeds just want to make their owner proud, while others prefer to do what they want, when they want to, wherever they want!",
+              "breed_group": "Character",
+              "type": "radio",
+              "low_value_1": "Self-Willed",
+              "middle_value_3": "Agreeable",
+              "high_value_5": "Eager to Please"
+            },
+            "watchdogprotective_nature": {
+              "selected": [],
+              "choices": false,
+              "score": { "$numberInt": "3" },
+              "traits_url": "watchdogprotective_nature",
+              "traits": "Watchdog/Protective Nature",
+              "description": "A breed's tendency to alert you that strangers are around. These breeds are more likely to react to any potential threat, whether it's the mailman or a squirrel outside the window. These breeds are likely to warm to strangers who enter the house and are accepted by their family.",
+              "breed_group": "Social",
+              "type": "radio",
+              "low_value_1": "What's Mine Is Yours",
+              "middle_value_3": "Occasional",
+              "high_value_5": "Vigilant"
+            },
+            "other_petsanimals_this_breed_may_not_interact_well_with": {
+              "traits_url": "other_petsanimals_this_breed_may_not_interact_well_with",
+              "traits": "Other Pets/Animals This Breed May Not Interact Well With",
+              "description": "Some breeds are better suited than others to interact with animals other than dogs, whether it's around the house or around the yard. Always supervise interactions between species to help keep your dog and other animals safe.",
+              "breed_group": "Social",
+              "low_value_1": "Checkbox (can have multiple values)",
+              "middle_value_3": "",
+              "high_value_5": "",
+              "choices": false,
+              "selected": []
+            }
+          }
+        }
+      },
+      "description": {
+        "affenpinscher": {
+          "breed_name_url": "affenpinscher",
+          "breed_name": "Affenpinscher",
+          "akc_org_blurb": "<p>Loyal, curious, and famously amusing, this almost-human toy dog is fearless out of all proportion to his size. As with all great comedians, it's the Affenpinscher's apparent seriousness of purpose that makes his antics all the more amusing.</p>",
+          "akc_org_about": "<p>The Affen's apish look has been described many ways. They've been called 'monkey dogs' and 'ape terriers.' The French say diablotin moustachu ('mustached little devil'), and Star Wars fans argue whether they look more like Wookies or Ewoks. &nbsp;&nbsp;&nbsp;&nbsp;Standing less than a foot tall, these sturdy terrier-like dogs approach life with great confidence. 'This isn't a breed you train, 'a professional dog handler tells us, 'He's like a human. You befriend him.' The dense, harsh coat is described as 'neat but shaggy' and comes in several colors; the gait is light and confident. They can be willful and domineering, but mostly Affens are loyal, affectionate, and always entertaining. Affen people say they love being owned by their little monkey dogs.</p>",
+          "mp_description": "<p>A big name for a very little dog. Called the 'mustached little devil' in France and the 'monkey-like terrier' in Germany, the breed is full of mischief and fun. They're intelligent dogs who need plenty of playtime and brisk walks. At such a small size, they're happy in any size home, including city apartments. Your Affenpinscher puppy will grow up with confidence and fearlessness that far outweighs his toy size, so diligent, patient training is important. He can be an endlessly entertaining companion and also succeeds in agility, obedience and the show ring.&nbsp;</p>"
+        }
+      },
+      "standards": {
+        "affenpinscher": {
+          "breed_name_url": "affenpinscher",
+          "breed_name": "Affenpinscher",
+          "title_1": "General Appearance",
+          "description_1": "The Affenpinscher is a balanced, wiry-haired terrier-like toy dog whose intelligence and demeanor make it a good house pet. Originating in Germany, the name Affenpinscher means \"monkey-like terrier.\" The breed was developed to rid the kitchens, granaries, and stables of rodents. In France the breed is described as the \"Diablotin Moustachu\" or moustached little devil. Both describe the appearance and attitude of this delightful breed. The total overall appearance of the Affenpinscher is more important than any individual characteristic. He is described as having a neat but shaggy appearance.\nSize, Proportion, Substance: A sturdy, compact dog with medium bone, not delicate in any way. Preferred height at the withers is 91¿2 to 111¿2 inches. Withers height is approximately the same as the length of the body from the point of the shoulder to point of the buttocks, giving a square appearance. The female may be slightly longer.",
+          "title_2": "Head",
+          "description_2": "The head is in proportion to the body, carried confidently with monkey-like facial expression. Eyes - Round, dark, brilliant, and of medium size in proportion to the head but not bulging or protruding. Eye rims are black. Ears - Cropped to a point, set high and standing erect; or natural, standing erect, semi-erect or dropped. All of the above types of ears, if symmetrical, are acceptable as long as the monkey-like expression is maintained. Skull - Round and domed, but not coarse. Stop -Well-defined. Muzzle - Short and narrowing slightly to a blunt nose. The length of the muzzle is approximately the same as the distance between the eyes. Nose - Black, turned neither up nor down. Lips - Black, with prominent lower lip. Bite - Slightly undershot. A level bite is acceptable if the monkey-like expression is maintained. An overshot bite is to be severely penalized. A wry mouth is a serious fault. The teeth and tongue do not show when the mouth is closed. The lower jaw is broad enough for the lower teeth to be straight and even.",
+          "title_3": "Neck Topline Body",
+          "description_3": "Neck - Short and straight. Topline straight and level. Body - The chest is moderately broad and deep; ribs are moderately sprung. Tuckup is slight. The back is short and level with a strong loin. The croup has just a perceptible curve. Tail may be docked or natural. A docked tail is generally between 1 and 2 inches long, set high and carried erect. The natural tail is set high and carried curved gently up over the back while moving. The type of tail is not a major consideration.",
+          "title_4": "Forequarters",
+          "description_4": "Front angulation is moderate. Shoulders - with moderate layback. The length of the shoulder blade and the upper arm are about equal. Elbows - close to the body. Front legs straight when viewed from any direction. Pasterns short and straight. Dewclaws generally removed. Feet small, round, and compact with black pads and nails.",
+          "title_5": "Hindquarters",
+          "description_5": "Rear angulation is moderate to match the front. Hindlegs straight when viewed from behind. From the side, hindlegs are set athe body to maintain a square appearance. The length of the upper thigh and the second thigh are about equal with moderate bend to the stifle. Hocks - Moderately angulated.",
+          "title_6": "Coat",
+          "description_6": "Dense hair, rough, harsh, and about 1 inch in length on the shoulders and body. May be shorter on the rear and tail. Head, neck, chest, stomach and legs have longer, less harsh coat. The mature Affenpinscher has a mane or cape of strong hair which blends into the back coat at the withers area. The longer hair on the head, eyebrows and beard stands off and frames the face to emphasize the monkey-like expression. Hair on the ears is cut very short. A correct coat needs little grooming to blend the various lengths of hair to maintain a neat but shaggy appearance. Color: Black, gray, silver, red, black and tan, or belge are all acceptable. Blacks may have a rusty cast or a few white or silver hairs mixed with the black. Reds may vary from a brownish red to an orangey tan. Belge has black, brown, and/or white hairs mixed with the red. With various colors, the furnishings may be a bit lighter. Some dogs may have black masks. A small white spot on the chest is not penalized, but large white patches are undesirable. Color is not a major consideration.",
+          "title_7": "",
+          "description_7": "",
+          "title_8": "",
+          "description_8": "",
+          "height_min": "9",
+          "height_max": "11.5",
+          "weight_min": "7",
+          "weight_max": "10",
+          "size": "XSmall",
+          "breed_standard_PDF": "http://images.akc.org/pdf/breeds/standards/Affenpinscher.pdf",
+          "height_min_f": "9",
+          "height_max_f": "11.5",
+          "height_min_m": "9",
+          "height_max_m": "11.5",
+          "height_display": "9-11.5 inches",
+          "weight_min_f": "7",
+          "weight_max_f": "10",
+          "weight_min_m": "7",
+          "weight_max_m": "10",
+          "weight_display": "7-10 pounds"
+        }
+      },
+      "markings": {
+        "affenpinscher": {
+          "markings": [
+            {
+              "marking_index": { "$numberInt": "332" },
+              "breed_name_url": "affenpinscher",
+              "breed_name": "Affenpinscher",
+              "akc_code": "501",
+              "standard_alternate": "S",
+              "cde_markings": "004",
+              "markings_long": "Black Mask",
+              "markings_short": "BLK MSK"
+            }
+          ]
+        }
+      },
+      "colors": {
+        "affenpinscher": {
+          "colors": [
+            {
+              "color_index": { "$numberInt": "1100" },
+              "breed_name_url": "affenpinscher",
+              "breed_name": "Affenpinscher",
+              "akc_code": "501",
+              "standard_alternate": "S",
+              "cde_color": "005",
+              "color_long": "Belge",
+              "color_short": "BLG"
+            },
+            {
+              "color_index": { "$numberInt": "1101" },
+              "breed_name_url": "affenpinscher",
+              "breed_name": "Affenpinscher",
+              "akc_code": "501",
+              "standard_alternate": "S",
+              "cde_color": "007",
+              "color_long": "Black",
+              "color_short": "BLK"
+            },
+            {
+              "color_index": { "$numberInt": "1102" },
+              "breed_name_url": "affenpinscher",
+              "breed_name": "Affenpinscher",
+              "akc_code": "501",
+              "standard_alternate": "S",
+              "cde_color": "016",
+              "color_long": "Black & Silver",
+              "color_short": "BLK & SLVR"
+            },
+            {
+              "color_index": { "$numberInt": "1103" },
+              "breed_name_url": "affenpinscher",
+              "breed_name": "Affenpinscher",
+              "akc_code": "501",
+              "standard_alternate": "S",
+              "cde_color": "018",
+              "color_long": "Black & Tan",
+              "color_short": "BLK & TN"
+            },
+            {
+              "color_index": { "$numberInt": "1104" },
+              "breed_name_url": "affenpinscher",
+              "breed_name": "Affenpinscher",
+              "akc_code": "501",
+              "standard_alternate": "S",
+              "cde_color": "140",
+              "color_long": "Red",
+              "color_short": "RD"
+            }
+          ]
+        }
+      },
+      "clubs": {
+        "affenpinscher": {
+          "breed_name_url": "affenpinscher",
+          "breed_name": "Affenpinscher",
+          "breed_club_name": "Affenpinscher Club of America",
+          "breed_club_url": "www.affenpinscher.org",
+          "breed_club_pdf_url": "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2021/12/06095919/Affenpinscher20190614.pdf",
+          "breed_rescue_url": "http://www.affenpinscherrescue.org/",
+          "national_breed_club": "Affenpinscher Club of America",
+          "national_breed_club_url": "www.affenpinscher.org",
+          "breed_referral_contact_name": "Karen Mancini",
+          "breed_referral_contact_phone_number": "(401) 781-0824",
+          "breed_referral_contact_email": "karenmanci@aol.com",
+          "breed_referral_contact_address": "32 Harvest Rd\nWarwick, RI 02888-3919",
+          "breed_referral_directory_title": "",
+          "breed_referral_directory_url": "",
+          "breed_referral_regional_club_title": "",
+          "breed_referral_regional_club_url": "",
+          "breed_referral_breed_steward_title": "",
+          "breed_referral_breed_steward_url": "",
+          "breed_referral_breed_mentor_title": "",
+          "breed_referral_breed_mentor_url": "",
+          "breed_rescue_link": "http://www.affenpinscherrescue.org/",
+          "breed_club_metadata": [
+            {
+              "id": { "$numberInt": "1415" },
+              "breed_id": "1",
+              "text_model_name": "ParentClub",
+              "text_metafield_label": "MP: National Breed Club Content",
+              "text_metafield_key": "national_breed_club_mp_freetext",
+              "date_create": "2022-04-21 15:41:23",
+              "date_updated": null,
+              "clob_metafield_value": null
+            },
+            {
+              "id": { "$numberInt": "1" },
+              "breed_id": "1",
+              "text_model_name": "ParentClub",
+              "text_metafield_label": "National Breed Club & Rescue Paragraph",
+              "text_metafield_key": "national_breed_club_rescue",
+              "date_create": "2021-12-13 15:50:10",
+              "date_updated": null,
+              "clob_metafield_value": "Want to connect with other people who love the same breed as much as you do? We have plenty of opportunities to get involved in your local community thanks to AKC Breed Clubs located in every state and more than 450 AKC Rescue Network groups across the country. Founded in 1965, the Affenpinscher Club of America is the official AKC Parent Club for the Affenpinscher."
+            },
+            {
+              "id": { "$numberInt": "284" },
+              "breed_id": "1",
+              "text_model_name": "ParentClub",
+              "text_metafield_label": "MP: Breed Rescue Email",
+              "text_metafield_key": "national_breed_club_rescue_email",
+              "date_create": "2022-04-13 18:35:15",
+              "date_updated": null,
+              "clob_metafield_value": null
+            },
+            {
+              "id": { "$numberInt": "286" },
+              "breed_id": "1",
+              "text_model_name": "ParentClub",
+              "text_metafield_label": "MP: Breed Rescue (freetext field)",
+              "text_metafield_key": "national_breed_club_rescue_freetext",
+              "date_create": "2022-04-13 18:35:15",
+              "date_updated": null,
+              "clob_metafield_value": "Affenpinscher Rescue of America is an all-volunteer organization dedicated to helping Affenpinschers in need."
+            },
+            {
+              "id": { "$numberInt": "283" },
+              "breed_id": "1",
+              "text_model_name": "ParentClub",
+              "text_metafield_label": "MP: Breed Rescue Name",
+              "text_metafield_key": "national_breed_club_rescue_name",
+              "date_create": "2022-04-13 18:35:15",
+              "date_updated": null,
+              "clob_metafield_value": "Breed Club Rescue: Affenpinscher Rescue of America"
+            },
+            {
+              "id": { "$numberInt": "285" },
+              "breed_id": "1",
+              "text_model_name": "ParentClub",
+              "text_metafield_label": "MP: Breed Rescue Phone",
+              "text_metafield_key": "national_breed_club_rescue_phone",
+              "date_create": "2022-04-13 18:35:15",
+              "date_updated": null,
+              "clob_metafield_value": null
+            }
+          ]
+        }
+      },
+      "history": {
+        "affenpinscher": {
+          "breed_name_url": "affenpinscher",
+          "breed_name": "Affenpinscher",
+          "akc_org_history": "<p>Though not classified as a terrier, the Affenpinscher was originally bred to work like one. His job was to exterminate rats and other pests in German stables of the 1600s. (The name Affenpinscher is German for 'monkey dog' or 'ape terrier.') Eventually, Affens were brought indoors to rid the kitchen of mice. In time, they became dual-purpose dogs: ratters by day, and by night devoted bed-warming companions for the lady of the house. The Affen is thought to have been an influence on the development of such later European breeds as the Brussels Griffon and the Miniature Schnauzer. Clubs devoted to the breed sprung up around France and Germany in the late 1800s, and in 1936 the American Kennel Club welcomed Affens into its ranks. The immense charm that propelled them from stable to kitchen to boudoir has made Affens a force in the show ring. In 2013, an Affen named Banana Joe delighted America by winning the Westminster Kennel Club's Best in Show. Affens have also succeeded in agility, obedience, and therapy. The grit that made them such effective ratters has never left the breed. Writer Desmond Morris reports that during a trip to Alaska he witnessed a tiny but fearless Affenpinscher chase off a grizzly bear!</p>",
+          "mp_history_job": "<p>Originally bred to kill rats and other pests in German stables of the 1600s, Affens were eventually brought indoors to rid the kitchen of mice. In time they became dual-purpose dogs: exterminators by day, and by night devoted bed-warming companions for the lady of the house. The immense charm that propelled them from stable to kitchen to boudoir has made Affens a force in the show ring. In 2013, an Affen named Banana Joe delighted America by winning Westminster's Best in Show.</p>",
+          "did_you_know": "The Affenpinscher's fur is wiry and often considered hypoallergenic. | Because of their heritage as ratters, Affenpinschers tend not to do well with rodent pets such as hamsters, ferrets and gerbils, but do tend to get along with other dogs. | The Affenpinscher was admitted to the AKC Stud Book in 1936. | The Affenpinscher is a rare breed. Be prepared to spend time on a waiting list if you're interested in acquiring one. | Affenpinschers are not good choices for homes with young children because they typically don't like to be hugged, squeezed or chased. | The preferred color of Affenpinschers is black, but they can also be black and tan, silver-gray, red, or mixtures of these colors."
+        }
+      }
+    },
+    "wp_breed_api_url": "https://www.akc.org/wp-json/json/v2/breedlist.json",
+    "breed_standard_text": "<p><b>Breed Standard:</b> A description of the ideal dog of each recognized breed, to serve as an ideal against which dogs are judged at shows, originally laid down by a parent breed club and accepted officially by national or international bodies.</p>\n",
+    "icons_path": "https://www.akc.org/wp-content/themes/akc/component-library/assets/img/symbols.svg?ver=1673974613",
+    "updated_at": "2022-08-15T13:27:38+00:00",
+    "admin_ajax_url": "https://www.akc.org/wp-admin/admin-ajax.php",
+    "compare_breeds_url": "https://www.akc.org/compare-breeds/?selected=%5B23195%5D",
+    "bounce_sponsor_link": "https://www.bouncefresh.com/en-us/pethair-lint-mega-sheet/pssocial?ps-utid=pet_referral_0723_akc&ps-utparam=akc_referral&utm_source=akc&utm_medium=referral&utm_campaign=pet_referral_0723_akc",
+    "bounce_sponsor_text": "AKC and Bounce Pet bring you the fur and hair scale!",
+    "is_bounce_sponsored": false
+  },
+  "ads": {
+    "mid1": {
+      "has_label": true,
+      "size": [{ "$numberInt": "728" }, { "$numberInt": "90" }],
+      "size_mapping": {
+        "976,0": [
+          [{ "$numberInt": "728" }, { "$numberInt": "90" }],
+          [{ "$numberInt": "970" }, { "$numberInt": "90" }],
+          [{ "$numberInt": "970" }, { "$numberInt": "250" }]
+        ],
+        "641,0": [
+          [{ "$numberInt": "728" }, { "$numberInt": "90" }],
+          [{ "$numberInt": "468" }, { "$numberInt": "60" }]
+        ],
+        "0,0": [
+          [{ "$numberInt": "320" }, { "$numberInt": "50" }],
+          [{ "$numberInt": "320" }, { "$numberInt": "100" }],
+          [{ "$numberInt": "300" }, { "$numberInt": "100" }],
+          [{ "$numberInt": "300" }, { "$numberInt": "50" }]
+        ]
+      },
+      "targeting": { "pos": "mid1" },
+      "slot_name": "/120519536/AKC.Breeds/name"
+    },
+    "mid2": {
+      "has_label": true,
+      "size": [{ "$numberInt": "728" }, { "$numberInt": "90" }],
+      "size_mapping": {
+        "976,0": [
+          [{ "$numberInt": "728" }, { "$numberInt": "90" }],
+          [{ "$numberInt": "970" }, { "$numberInt": "90" }],
+          [{ "$numberInt": "970" }, { "$numberInt": "250" }]
+        ],
+        "641,0": [
+          [{ "$numberInt": "728" }, { "$numberInt": "90" }],
+          [{ "$numberInt": "468" }, { "$numberInt": "60" }]
+        ],
+        "0,0": [
+          [{ "$numberInt": "300" }, { "$numberInt": "250" }],
+          [{ "$numberInt": "320" }, { "$numberInt": "50" }],
+          [{ "$numberInt": "320" }, { "$numberInt": "100" }],
+          [{ "$numberInt": "300" }, { "$numberInt": "100" }],
+          [{ "$numberInt": "300" }, { "$numberInt": "50" }]
+        ]
+      },
+      "targeting": { "pos": "mid2" },
+      "slot_name": "/120519536/AKC.Breeds/name"
+    },
+    "mid3": {
+      "has_label": true,
+      "size": [{ "$numberInt": "300" }, { "$numberInt": "250" }],
+      "size_mapping": {
+        "976,0": [
+          [{ "$numberInt": "728" }, { "$numberInt": "90" }],
+          [{ "$numberInt": "970" }, { "$numberInt": "90" }],
+          [{ "$numberInt": "970" }, { "$numberInt": "250" }]
+        ],
+        "641,0": [[{ "$numberInt": "300" }, { "$numberInt": "250" }]],
+        "0,0": [
+          [{ "$numberInt": "300" }, { "$numberInt": "250" }],
+          [{ "$numberInt": "320" }, { "$numberInt": "50" }],
+          [{ "$numberInt": "320" }, { "$numberInt": "100" }],
+          [{ "$numberInt": "300" }, { "$numberInt": "100" }],
+          [{ "$numberInt": "300" }, { "$numberInt": "50" }]
+        ]
+      },
+      "targeting": { "pos": "mid3" },
+      "slot_name": "/120519536/AKC.Breeds/name"
+    },
+    "mid4": {
+      "has_label": true,
+      "size": [{ "$numberInt": "300" }, { "$numberInt": "250" }],
+      "size_mapping": {
+        "976,0": [
+          [{ "$numberInt": "300" }, { "$numberInt": "250" }],
+          [{ "$numberInt": "336" }, { "$numberInt": "280" }]
+        ],
+        "641,0": [[{ "$numberInt": "300" }, { "$numberInt": "250" }]],
+        "0,0": [
+          [{ "$numberInt": "300" }, { "$numberInt": "250" }],
+          [{ "$numberInt": "320" }, { "$numberInt": "50" }],
+          [{ "$numberInt": "320" }, { "$numberInt": "100" }],
+          [{ "$numberInt": "300" }, { "$numberInt": "100" }],
+          [{ "$numberInt": "300" }, { "$numberInt": "50" }]
+        ]
+      },
+      "targeting": { "pos": "mid4" },
+      "slot_name": "/120519536/AKC.Breeds/name"
+    },
+    "mid5_desktop": {
+      "has_label": true,
+      "size": [{ "$numberInt": "300" }, { "$numberInt": "250" }],
+      "size_mapping": {
+        "976,0": [
+          [{ "$numberInt": "300" }, { "$numberInt": "250" }],
+          [{ "$numberInt": "320" }, { "$numberInt": "50" }],
+          [{ "$numberInt": "320" }, { "$numberInt": "100" }],
+          [{ "$numberInt": "300" }, { "$numberInt": "100" }],
+          [{ "$numberInt": "300" }, { "$numberInt": "50" }]
+        ],
+        "641,0": [],
+        "0,0": []
+      },
+      "targeting": { "pos": "mid5_desktop" },
+      "slot_name": "/120519536/AKC.Breeds/name"
+    }
+  },
+  "breed": {
+    "media": {
+      "video": {
+        "type": "",
+        "src": "",
+        "description": "",
+        "poster": "",
+        "akctv_embed_id": ""
+      },
+      "about_video": {
+        "type": "",
+        "src": "",
+        "description": "",
+        "poster": "",
+        "akctv_embed_id": ""
+      },
+      "gallery": [
+        {
+          "src": "https://www.akc.org/wp-content/uploads/2017/11/Affenpinscher-running-outdoors.jpg",
+          "alt": "Affenpinscher running outdoors.",
+          "caption": "",
+          "credit": "©Sharon Housley - stock.adobe.com"
+        },
+        {
+          "src": "https://www.akc.org/wp-content/uploads/2017/11/Affenpinschers-together-in-the-grass.jpg",
+          "alt": "Affenpinschers together in the grass.",
+          "caption": "",
+          "credit": "katamount/Shutterstock"
+        },
+        {
+          "src": "https://www.akc.org/wp-content/uploads/2017/11/Affenpinscher-at-the-2016-ANC.jpg",
+          "alt": "Affenpinscher at the 2016 AKC National Championship.",
+          "caption": "",
+          "credit": "©HOTdog Magazine"
+        },
+        {
+          "src": "https://www.akc.org/wp-content/uploads/2017/11/Affenpinscher-head-portrait-1.jpg",
+          "alt": "Affenpinscher head portrait.",
+          "caption": "",
+          "credit": "©American Kennel Club"
+        },
+        {
+          "src": "https://www.akc.org/wp-content/uploads/2017/11/Affenpinscher-movement-at-the-2016-ANC.jpg",
+          "alt": "Affenpinscher movement at the 2016 AKC National Championship.",
+          "caption": "",
+          "credit": "David Woo ©American Kennel Club"
+        },
+        {
+          "src": "https://www.akc.org/wp-content/uploads/2017/11/Affenpinscher-coat-detail.jpg",
+          "alt": "Affenpinscher coat detail.",
+          "caption": "",
+          "credit": "©American Kennel Club"
+        }
+      ],
+      "standard": {
+        "src": "https://www.akc.org/wp-content/uploads/2017/11/Affenpinscher-illustration.jpg",
+        "alt": "Affenpinscher illustration."
+      }
+    },
+    "standard": {
+      "image": "https://www.akc.org/wp-content/uploads/2017/11/Affenpinscher-illustration.jpg"
+    },
+    "puppies": {
+      "image": {
+        "src": "https://www.akc.org/wp-content/uploads/2017/11/Affenpinscher-puppy-standing-outdoors-in-the-grass-1.jpg",
+        "alt": "Affenpinscher puppy standing outdoors in the grass."
+      },
+      "title": "Find Puppies",
+      "text": "AKC Marketplace is the only site to exclusively list 100% AKC puppies from AKC-Registered litters and the breeders who have cared for and raised these puppies are required to follow rules and regulations established by the AKC.",
+      "button": {
+        "text": "Look for your Puppy",
+        "url": "https://marketplace.akc.org/puppies/affenpinscher",
+        "is_external": false
+      }
+    },
+    "clubs": {
+      "image": { "src": false, "alt": null },
+      "title": "National Breed Club & Rescue",
+      "text": "Want to connect with other people who love the same breed as much as you do? We have plenty of opportunities to get involved in your local community thanks to AKC Breed Clubs located in every state and more than 450 AKC Rescue Network groups across the country. Founded in 1965, the Affenpinscher Club of America is the official AKC Parent Club for the Affenpinscher."
+    },
+    "popularity": {
+      "title": "AKC Breed Popularity Ranking",
+      "text": "<p>Every year the American Kennel Club releases the list of \"most popular breeds\", based on registration statistics for that year.</p>\n"
+    },
+    "history": {
+      "anchor_nav": {
+        "id": "timeline",
+        "url": "#timeline",
+        "value": "#timeline",
+        "text": "History",
+        "is_active": null,
+        "menu_order": { "$numberInt": "5" }
+      },
+      "has_dots": true,
+      "section_title": { "text": "History" },
+      "content": "<p>Though not classified as a terrier, the Affenpinscher was originally bred to work like one. His job was to exterminate rats and other pests in German stables of the 1600s. (The name Affenpinscher is German for “monkey dog” or “ape terrier.”) Eventually, Affens were brought indoors to rid the kitchen of mice. In time, they became dual-purpose dogs: ratters by day, and by night devoted bed-warming companions for the lady of the house.</p>\n<p>The Affen is thought to have been an influence on the development of such later European breeds as the <a href=\"/dog-breeds/brussels-griffon/\" target=\"_blank\" rel=\"noopener\">Brussels Griffon</a> and the <a href=\"/dog-breeds/miniature-schnauzer/\">Miniature Schnauzer</a>. Clubs devoted to the breed sprung up around France and Germany in the late 1800s, and in 1936 the American Kennel Club welcomed Affens into its ranks. The immense charm that propelled them from stable to kitchen to boudoir has made Affens a force in the show ring. In 2013, an Affen named Banana Joe delighted America by winning the Westminster Kennel Club’s Best in Show. Affens have also succeeded in agility, obedience, and therapy.</p>\n<p>The grit that made them such effective ratters has never left the breed. Writer Desmond Morris reports that during a trip to Alaska he witnessed a tiny but fearless Affenpinscher chase off a grizzly bear!</p>\n",
+      "excerpt": "Though not classified as a terrier, the Affenpinscher was originally bred to work like one. His job was to exterminate rats and other pests in German stables of the 1600s. (The name Affenpinscher is German for “monkey dog” or “ape&hellip;",
+      "origins": "",
+      "slides": [
+        {
+          "img_html": "<img width=\"500\" height=\"500\" src=\"https://www.akc.org/wp-content/themes/akc/component-library/assets/img/1x1.trans.gif\" class=\"attachment-large_square size-large_square lozad\" alt=\"Painting of an Affenpinscher laying on a pillow.\" decoding=\"async\" loading=\"lazy\" data-src=\"https://www.akc.org/wp-content/uploads/2017/11/Painting-of-an-Affenpinscher-laying-on-a-pillow-500x500.jpg\" data-srcset=\"https://www.akc.org/wp-content/uploads/2017/11/Painting-of-an-Affenpinscher-laying-on-a-pillow-500x500.jpg 500w, https://www.akc.org/wp-content/uploads/2017/11/Painting-of-an-Affenpinscher-laying-on-a-pillow-150x150.jpg 150w, https://www.akc.org/wp-content/uploads/2017/11/Painting-of-an-Affenpinscher-laying-on-a-pillow-400x400.jpg 400w, https://www.akc.org/wp-content/uploads/2017/11/Painting-of-an-Affenpinscher-laying-on-a-pillow-50x50.jpg 50w\" data-sizes=\"(max-width: 500px) 100vw, 500px\" />",
+          "credit": "Courtesy of the AKC Museum of the Dog"
+        },
+        {
+          "img_html": "<img width=\"500\" height=\"500\" src=\"https://www.akc.org/wp-content/themes/akc/component-library/assets/img/1x1.trans.gif\" class=\"attachment-large_square size-large_square lozad\" alt=\"Vintage Affenpinscher head portrait.\" decoding=\"async\" loading=\"lazy\" data-src=\"https://www.akc.org/wp-content/uploads/2017/11/Affenpinscher-head-portrait-500x500.jpg\" data-srcset=\"https://www.akc.org/wp-content/uploads/2017/11/Affenpinscher-head-portrait-500x500.jpg 500w, https://www.akc.org/wp-content/uploads/2017/11/Affenpinscher-head-portrait-150x150.jpg 150w, https://www.akc.org/wp-content/uploads/2017/11/Affenpinscher-head-portrait-400x400.jpg 400w, https://www.akc.org/wp-content/uploads/2017/11/Affenpinscher-head-portrait-50x50.jpg 50w\" data-sizes=\"(max-width: 500px) 100vw, 500px\" />",
+          "credit": "Courtesy of the AKC Library and Archives"
+        },
+        {
+          "img_html": "<img width=\"500\" height=\"500\" src=\"https://www.akc.org/wp-content/themes/akc/component-library/assets/img/1x1.trans.gif\" class=\"attachment-large_square size-large_square lozad\" alt=\"Vintage portrait of an Affenpinscher at a conformation show.\" decoding=\"async\" loading=\"lazy\" data-src=\"https://www.akc.org/wp-content/uploads/2017/11/Affenpinscher-at-a-conformation-show-500x500.jpg\" data-srcset=\"https://www.akc.org/wp-content/uploads/2017/11/Affenpinscher-at-a-conformation-show-500x500.jpg 500w, https://www.akc.org/wp-content/uploads/2017/11/Affenpinscher-at-a-conformation-show-150x150.jpg 150w, https://www.akc.org/wp-content/uploads/2017/11/Affenpinscher-at-a-conformation-show-400x400.jpg 400w, https://www.akc.org/wp-content/uploads/2017/11/Affenpinscher-at-a-conformation-show-50x50.jpg 50w\" data-sizes=\"(max-width: 500px) 100vw, 500px\" />",
+          "credit": "Courtesy of the AKC Library and Archives"
+        },
+        {
+          "img_html": "<img width=\"500\" height=\"500\" src=\"https://www.akc.org/wp-content/themes/akc/component-library/assets/img/1x1.trans.gif\" class=\"attachment-large_square size-large_square lozad\" alt=\"Vintage portrait of an Affenpinscher at a conformation show.\" decoding=\"async\" loading=\"lazy\" data-src=\"https://www.akc.org/wp-content/uploads/2017/11/Affenpinscher-at-a-dog-show-500x500.jpg\" data-srcset=\"https://www.akc.org/wp-content/uploads/2017/11/Affenpinscher-at-a-dog-show-500x500.jpg 500w, https://www.akc.org/wp-content/uploads/2017/11/Affenpinscher-at-a-dog-show-150x150.jpg 150w, https://www.akc.org/wp-content/uploads/2017/11/Affenpinscher-at-a-dog-show-400x400.jpg 400w, https://www.akc.org/wp-content/uploads/2017/11/Affenpinscher-at-a-dog-show-50x50.jpg 50w\" data-sizes=\"(max-width: 500px) 100vw, 500px\" />",
+          "credit": "Courtesy of the AKC Library and Archives"
+        },
+        {
+          "img_html": "<img width=\"500\" height=\"500\" src=\"https://www.akc.org/wp-content/themes/akc/component-library/assets/img/1x1.trans.gif\" class=\"attachment-large_square size-large_square lozad\" alt=\"Affenpinscher sitting in a picnic basket.\" decoding=\"async\" loading=\"lazy\" data-src=\"https://www.akc.org/wp-content/uploads/2017/11/Affenpinscher-sitting-in-a-picnic-basket-500x500.jpg\" data-srcset=\"https://www.akc.org/wp-content/uploads/2017/11/Affenpinscher-sitting-in-a-picnic-basket-500x500.jpg 500w, https://www.akc.org/wp-content/uploads/2017/11/Affenpinscher-sitting-in-a-picnic-basket-150x150.jpg 150w, https://www.akc.org/wp-content/uploads/2017/11/Affenpinscher-sitting-in-a-picnic-basket-400x400.jpg 400w, https://www.akc.org/wp-content/uploads/2017/11/Affenpinscher-sitting-in-a-picnic-basket-50x50.jpg 50w\" data-sizes=\"(max-width: 500px) 100vw, 500px\" />",
+          "credit": "©Callalloo Twisty - stock.adobe.com"
+        }
+      ],
+      "tall_credits": false
+    },
+    "health": {
+      "description": "<p>Owning a dog <strong><i>is not just a privilege; it’s a responsibility.</i></strong> They depend on us for, at minimum, food and shelter, and deserve much more. When you take a dog into your life, you need to understand the commitment that dog ownership entails.</p>\n"
+    }
+  }
+}
+
+```
+
+## Usage
+
+Use this API to get the specific dog breed information and use it in your application.

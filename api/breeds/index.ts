@@ -1,3 +1,8 @@
+/*
+  This API retrieves a list of dog breeds 
+  it sends the data as a response with a status code of 200
+*/
+
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 import connectToDatabase from "../../mongodb/db";
 import { ObjectId } from "mongodb";
@@ -17,12 +22,12 @@ export default async function getBreedList(
       response.status(200).send(breedList.data).end();
     } else {
       await client.close();
-      throw "No breed list found";
+      throw "There is something wrong";
     }
   } catch (error) {
     response
       .status(500)
-      .send("Error: " + error)
+      .send("message : " + error)
       .end();
   }
 }

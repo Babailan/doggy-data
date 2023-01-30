@@ -1,4 +1,5 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
+import { ObjectId } from "mongodb";
 import connectToDatabase from "../../mongodb/db";
 
 export default async function getBreed(
@@ -6,23 +7,24 @@ export default async function getBreed(
   response: VercelResponse
 ) {
   try {
-    const { slug } = request.query;
+    const { q } = request.query;
     const client = await connectToDatabase();
+
     const db = client.db("akc");
     const breed = await db
       .collection("breeds")
-      .findOne({ "settings.current_breed": slug });
+      .findOne({ _id: new ObjectId(q as string) });
     if (breed) {
       await client.close();
       response.status(200).send(breed).end();
     } else {
       await client.close();
-      throw "No breed list found";
+      response.status(200).send("No breed was found").end();
     }
   } catch (error) {
     response
       .status(500)
-      .send("Error: " + error)
+      .send("message: " + error)
       .end();
   }
 }

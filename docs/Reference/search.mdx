@@ -1,0 +1,51 @@
+---
+sidebar_label: "API Endpoint: Search for Dog Breeds"
+
+sidebar_position: 2
+---
+
+import style from "./style.module.css";
+
+# API Endpoint: Search for Dog Breeds
+
+## Endpoint
+
+`/api/breeds/search?q=[string]`
+
+## Example Request
+
+<a href="/api/breeds/search?q=bulldog" className={style.link} target="_blank">
+  GET /api/breeds/search?q=bulldog
+</a>
+
+> _array of object like [this](/docs/Reference/id#example-response)._
+
+```json
+[
+    ...
+]
+```
+
+## Method
+
+`GET`
+
+## URL Parameters
+
+- `q=[string]`: The breed of the dog to search for.
+
+## Success Response
+
+- Code: `200 OK`
+- Content: A JSON object containing a list of breeds that match the search query.
+
+## Error Response
+
+- Code: `400 Bad Request`
+- Content: An error message indicating that the search query is missing or invalid.
+
+## Notes
+
+- If the search query does not match any breeds, an empty list will be returned.
+
+- The search is case-insensitive and returns breeds that contain the search query in any part of their name.
