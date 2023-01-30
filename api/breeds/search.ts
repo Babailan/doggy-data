@@ -6,7 +6,7 @@ export default async function getBreedList(
   request: VercelRequest,
   response: VercelResponse
 ) {
-  const { q } = request.query;
+  const { q, limit } = request.query;
   if (!q) {
     response.status(400).send({ message: "Missing search query" }).end();
     return;
@@ -18,9 +18,12 @@ export default async function getBreedList(
     const regex = new RegExp(format, "g");
     const breedList = await db
       .collection("breeds")
-      .find({
-        "settings.current_breed": regex,
-      })
+      .find(
+        {
+          "settings.current_breed": regex,
+        },
+        { limit: limit && 10 }
+      )
       .toArray();
 
     if (breedList.length > 0) {

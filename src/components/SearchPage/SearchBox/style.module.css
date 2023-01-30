@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  border-radius: 5px;
+  cursor: text;
+  margin: 1em auto;
+  transition: 0.3s;
+  max-width: 350px;
+  width: 100%;
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: 1s;
+  width: 100%;
+}
+
+html[data-theme="dark"] .container {
+  border: 0.5px solid rgb(199, 199, 199);
+}
+html[data-theme="light"] .container {
+  border: 0.5px solid rgb(199, 199, 199);
+}
+.searchIcon {
+  cursor: pointer;
+  z-index: 2;
+}

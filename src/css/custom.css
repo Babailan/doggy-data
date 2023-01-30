@@ -28,3 +28,21 @@
   --ifm-color-primary-lightest: #3c7ca7;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.loading-dot {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  animation: loading 1s ease-in-out infinite;
+  margin: 0 5px;
+  display: inline-block;
+  background-color: #3c7ca7;
+}
+@keyframes loading {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
