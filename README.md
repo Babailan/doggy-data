@@ -1,4 +1,18 @@
-# Doggy Data
+# Doggy Data API
+
+The Doggy Data API provides comprehensive information on various dog breeds. Access accurate and up-to-date data with ease, making it the perfect resource for all dog enthusiasts. Explore and discover the unique traits and characteristics of your favorite breeds, all in one convenient place. Start utilizing the Doggy Data API today and enhance your knowledge on man's best friend.
+
+
+Visit the site : https://doggy-data.vercel.app/
+
+
+To clone this project run 
+
+```
+$ git clone https://github.com/Babailan/doggy-data.git
+```
+
+
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
@@ -21,23 +35,3 @@ This command starts a local development server and opens up a browser window. Mo
 ```
 $ yarn build
 ```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
-
-> Error: queryTxt ESERVFAIL cluster0.dgb4wek.mongodb.net
