@@ -14,6 +14,7 @@ export default async function getBreed(
     const breed = await db
       .collection("breeds")
       .findOne({ _id: new ObjectId(q as string) });
+
     if (breed) {
       await client.close();
       response.status(200).send(breed).end();
